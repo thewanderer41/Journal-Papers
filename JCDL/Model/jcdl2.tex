@@ -1,0 +1,22 @@
+\section{Previous Work}
+
+Versioning concepts in linked data can often be found in provenance ontologies such as The Provenance Ontology (PROV-O), a World Wide Web Consortium (W3C) recommendation \cite{Lebo2013}.
+PROV-O primarily focuses on the generation of data entities from activities, meaning the only entity comparison property is \textit{prov:derivation}.
+Addition and invalidation properties result from data activities, improperly crediting the source of change from a versioning context.
+An addition or invalidation comes from the original or prior object, which may not be the object used by the data activity.
+The Provenance, Authorship, and Versioning (PAV) Ontology uses \textit{pav:version} to label versions and \textit{pav:previousVersion} to connect adjacent versions \cite{Ciccarese2013}.
+The ontology does not elucidate greater detail explaining the differences between versions, identifying changing attributes or differentiating between additions, invalidation, and modifications.
+Schema.org is not an ontology but provides a means to identify different kinds of change with \textit{schema:ReplaceAction}, \textit{schema:AddAction}, and \textit{schema:DeleteAction} \cite{SchemaRep, SchemaAdd, SchemaRem}.
+The Schema.org concepts only model each change in isolation, not linking together a series of changes into a lineage.
+A data object is not always deleted when invalidated so \textit{schema:DelteAction} is occasionally not appropriate to use.
+
+Structured data allows the content of web documents encoded in HyperText Markup Language (HTML) to be understood as linked data.
+The Resource Description Framework in Attributes (RDFa) uses HTML tag attributes  to annotate visible content, identifying a string of digits as a telephone number \cite{Herman2015}.
+As will be seen in the later sections, the resulting model interacts very little with the visible content, making data storage more desirable than data annotation.
+JavaScript Object Notation for Linked Data (JSON-LD) enables structured data storage without involving visible content by introducing semantics to the JSON specification \cite{JSONLD}.
+
+The amount of change information generated for an object can be related to provenance information since changes to activities and inputs result in new data objects which can be compared to the original object as a version, generating change information \cite{Barkstrom2003}.
+Buneman finds that provenance data consumes storage space on the order of the original data, or after compression, the provenance takes up twenty percent of the original space \cite{Buneman}.
+Including more data in a different form is guaranteed to decrease performance with the increased space utilization, but the reduction can be bounded.
+Since the change log contains the differences between two versions, therefore containing at most all the entries in the data set, encoding the change data into the log is expected to decrease performance by at most fifty percent.
+The storage space necessary to hold the original change log and the change data is double the original data set size in order to hold the original change data and the data in linked-data format in the same document, but the number of entries remain the same since the change log and change data entries describe the same changes.

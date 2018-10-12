@@ -1,0 +1,76 @@
+\title{Measuring Data Change using VersOn}
+
+\author{Benno Lee}
+\affiliation{%
+	\institution{Rensselaer Polytechnic Institute}
+	\city{Troy}
+	\state{NY}
+	\postcode{12180}
+	\country{USA}}
+\email{leeb5@rpi.edu}
+\author{Peter Fox}
+\affiliation{%
+	\institution{Rensseleaer Polytechnic Institute}
+	\city{Troy}
+	\state{NY}
+	\postcode{12180}
+	\country{USA}}
+\email{pfox@cs.rpi.edu}
+
+\begin{abstract}
+	Dot-decimal identifiers are traditionally used to label versions as well as indicate whether the current versions has a major, minor, or smaller different from the previous version.
+	The method poses a challenge because differences between categories can be compared, but not within categories.
+	The Versioning Ontology (VersOn) captures individual changes between versions in a versioning graph.
+	The changes within the versioning graph can be enumerated, enabling a more precise change metric called change distance.
+	We use the Global Change Master Directory (GCMD) Keywords to test the efficacy of change distance to dot-decimal identifier categories in assessing change.
+	We found that change distance is able to more precisely measure changes between versions, identifying trends in behavior within and across dot-decimal identifier categories.
+	Through analysis of the Global Change Master Directory (GCMD) Keywords Version 8.5, we found that VersOn enables data consumers to assess data change in ways relevant to the consumer and independent of the producer's assessment of change as indicated by the dot-decimal identifier assigned to the version.
+\end{abstract}
+
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315</concept_id>
+	<concept_desc>Information systems~Semantic web description languages</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003277.10003280</concept_id>
+	<concept_desc>Information systems~Web log analysis</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315.10003314</concept_id>
+	<concept_desc>Information systems~Resource Description Framework (RDF)</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315.10003316</concept_id>
+	<concept_desc>Information systems~Web Ontology Language (OWL)</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Information systems~Semantic web description languages}
+\ccsdesc[300]{Information systems~Web log analysis}
+\ccsdesc[300]{Information systems~Resource Description Framework (RDF)}
+\ccsdesc[300]{Information systems~Web Ontology Language (OWL)}
+
+\keywords{Version, versioning, versioning ontology, data change, change metric, versioning graph}
+
+\maketitle
+
+\section{Introduction}
+
+The organization of data sets into versions is often determined by the data traditions of the data managers \cite{barkstrom2014earth}.
+A common tradition in versioning practice is the use of dot-decimal identifiers to label versions \cite{Tagger2005}.
+In addition to serving as an identifier, the structure broadly categorizes the amount of change between versions as major, minor, or smaller.
+Depending on the total change, the associated category in the identifier of the previous version is incremented.
+Dot-decimal identifiers introduce a challenge in assessing data change because labels are applied by the data producer at the time of publication.
+As a result, the producer has sole authority on the context and amount of change introduced by a new version.
+
+The Versioning Ontology (VersOn) captures the individual changes between versions using linked data \cite{VO_model}.
+VersOn also includes semantics to classify changes into additions, invalidations, and modifications.
+Because at least one change contributes to a new version, counting the changes provides a more precise metric than the broad categories.
+We used VersOn to develop a change distance which is more precise than the dot-decimal categorizations and enables users to contextualize change assessments.

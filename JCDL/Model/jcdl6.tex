@@ -1,0 +1,16 @@
+\section{Conclusion}
+
+Change capture using linked data is made more complete with the Versioning Ontology (VersOn).
+VersOn uniquely captures the three types of change, addition, invalidation, and modification, using three constructions.
+The ontology maintains connectivity between versions, preserving continuity across multiple versions.
+The model also correctly connects changing attributes with respective versions, not with provenance activities.
+
+Initial encoded change logs were generated using RDFa.
+RDFa constrained the content and order of the encoding but could not be leveraged to utilize the visible data.
+An alternative encoding using JSON-LD pulled the linked data out of the attributes.
+The JSON-LD encoding can more closely adhere to the model at the cost of increased storage cost.
+
+The automated change log generation yielded some unexpected results with reductions to performance of over 90\%.
+While concessions were made using RDFa to keep the change log human readable, the linked data only log returned similar results.
+From the analysis, we can tell that significant summarization can occur if changes are summarized across rows or columns in a tabular data set.
+Because modifications are not summarized across rows or columns and comprise almost all of the changes in the encoding, modifications can be concluded to be the primary contributor to encoded change log size expansion.

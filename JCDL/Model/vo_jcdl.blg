@@ -1,0 +1,43 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: vo_jcdl.aux
+The style file: ACM-Reference-Format.bst
+Database file #1: vo_model_bib.bib
+Warning--entry type for "SchemaAdd" isn't style-file defined
+--line 121 of file vo_model_bib.bib
+Warning--entry type for "SchemaRep" isn't style-file defined
+--line 129 of file vo_model_bib.bib
+Warning--entry type for "SchemaRem" isn't style-file defined
+--line 137 of file vo_model_bib.bib
+Warning--entry type for "JSONLD" isn't style-file defined
+--line 158 of file vo_model_bib.bib
+Warning--no key, author in SchemaRep
+Warning--to sort, need author or key in SchemaRep
+Warning--no key, author in SchemaAdd
+Warning--to sort, need author or key in SchemaAdd
+Warning--no key, author in SchemaRem
+Warning--to sort, need author or key in SchemaRem
+Warning--no key, author in SchemaAdd
+Warning--no key, author in SchemaAdd
+Warning--no key, author in SchemaRem
+Warning--no key, author in SchemaRep
+Warning--no key, author in SchemaAdd
+Warning--empty author in SchemaAdd
+Warning--empty year in SchemaAdd
+Warning--no key, author in SchemaRem
+Warning--empty author in SchemaRem
+Warning--empty year in SchemaRem
+Warning--no key, author in SchemaRep
+Warning--empty author in SchemaRep
+Warning--empty year in SchemaRep
+Warning--can't use both author and editor fields in Barkstrom2003
+Warning--empty publisher in Barkstrom2003
+Warning--empty address in Barkstrom2003
+Warning--empty year in Buneman
+Warning--empty publisher in Buneman
+Warning--empty address in Buneman
+Warning--empty publisher in uel1037
+Warning--empty address in uel1037
+Warning--page numbers missing in both pages and numpages fields in uel1037
+Warning--empty publisher in Morrison2016
+Warning--empty address in Morrison2016
+Warning--page numbers missing in both pages and numpages fields in Morrison2016
+(There were 35 warnings)

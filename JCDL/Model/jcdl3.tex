@@ -1,0 +1,106 @@
+\section{The Versioning Ontology}
+
+The model underlying The Versioning Ontology (VersOn) utilizes three primary concepts: version, attribute, and change.
+The model always relates at least two versions which represent the data object being versioned.
+An attribute is the part of a version which changes, causing a new version.
+A change represents the difference between two versions through their attributes, formed by the presence, absence, or alteration in a version.
+In order to represent all three kinds of change, addition, invalidation, and modification, the concepts are arranged and related in three different formations based on the presence or absence of attributes.
+
+\subsection{Modification}
+
+The modify relation occurs when an attribute appears in both versions and the attributes' value are different.
+In Figure \ref{ModificationFig}, a modification is captured between two versions.
+\begin{figure}
+	\centering
+	\vspace{0.0in} % normally the command here would be \includegraphics
+	%	\includegraphics{figures/Addition.png}
+	\begin{tikzpicture}[every node/.style={draw, rectangle}]
+	\begin{scope}[node distance=20mm and 20mm]
+	\node (c) [scale=1.25] at (1,0) {Change M};
+	\node (1) [above left=of c, scale=1.25] {Version 1};
+	\node (2) [above right=of c, scale=1.25] {Version 2};
+	\node (a1) [below =of 1, scale=1.25] {Attribute 1};
+	\node (a2) [below =of 2, scale=1.25] {Attribute 2};
+	
+	\draw [line width=2pt,->] (a1) -- (c);
+	\draw [line width=2pt,->] (c) -- (a2);
+	\draw [line width=2pt, ->] (1) -- (a1);
+	\draw [line width=2pt, ->] (2) -- (a2);
+	\end{scope}
+	\end{tikzpicture}
+	\caption{Model of the relationships between Versions 1 and 2 when modifying Attribute 1 from Version 1 as a result of Change M, resulting in Attribute 2 from Version 2.}
+	\label{ModificationFig}  % the \label command comes AFTER the caption
+\end{figure}
+Each version has an attribute, Attribute 1 and Attribute 2, respectively.
+A modification concept, a subclass of the change concept, connects the two attributes, denoting that the values described by the attribute differ.
+The connectivity between versions is maintained through the implied relationship across attributes.
+The attributes are directly associated with the respective version.
+
+The specific values pertaining to Attribute 1 and Attribute 2 are not captured by VersOn because acknowledging that a difference exists is more important.
+Extending the model to properly communicate the significance of a modification for a wide variety of domains would require sizable domain knowledge and would be outside of a data versioning scientist's domain.
+In addition, the model would essentially begin storing a copy of the data set, leading to space and redundancy concerns.
+
+In some applications, a modification is represented as an invalidation followed by an addition.
+The representation has a couple of problems.
+The first is that the sequence of changes implies that there is an intermediary stage where all the modified values have been invalidated but not added.
+The intermediary stage constitutes a new version of the data object, even though only one change is being made.
+The second issue with using the two change sequence is that the two states of attribute, before and after the modification, becomes disassociated.
+Any new attribute being added to the version is not necessarily associated with an attribute in the left-handed version.
+Establishing the association between attributes after an invalidation-addition sequence is the same as and more concisely expressed as a single modification.
+
+\subsection{Addition}
+
+In Figure \ref{AdditionFig}, the addition construction differs from the modify construction by the absence of Attribute 1.
+\begin{figure}[b]
+	\centering
+	\vspace{0.0in} % normally the command here would be \includegraphics
+	%	\includegraphics{figures/Addition.png}
+	\begin{tikzpicture}[every node/.style={draw, rectangle}]
+	\begin{scope}[node distance=20mm and 20mm]
+	\node (c) [scale=1.25] at (1,0) {Change A};
+	\node (1) [above left=of c, scale=1.25] {Version 1};
+	\node (2) [above right=of c, scale=1.25] {Version 2};
+	\node (a) [below =of 2, scale=1.25] {Attribute 2};
+	
+	\draw [line width=2pt,->] (1) -- (c);
+	\draw [line width=2pt,->] (c) -- (a);
+	\draw [line width=2pt, ->] (2) -- (a);
+	\end{scope}
+	\end{tikzpicture}
+	\caption{Model of the relationships between Versions 1 and 2 when adding an Attribute 2 to Version 2 as a result of Change A.}
+	\label{AdditionFig}  % the \label command comes AFTER the caption
+\end{figure}
+The absence creates a disconnect between Version 1 and Change A.
+In order to maintain version connectivity between versions, Version 1 must be reconnected to the other concepts in the model.
+A property is used to create a path from Version 1 to Change A, maintaining the connectivity between Version 1 and Version 2.
+The path does not show that Version 1 informs or creates Attribute 2, while the case may be true.
+The construction was also chosen to create a symmetric orientation with the invalidation change.
+
+
+\subsection{Invalidation}
+
+The invalidation construction has a missing attribute on the right-hand side of the relation, contrary to the addition construction.
+As a result of the invalidation, an attribute no longer exists in the right-hand version.
+As seen in Figure \ref{InvalidationFig}, the invalidation change concept matches to the Version 2 object.
+\begin{figure}
+	\centering
+	\vspace{0.0in} % normally the command here would be \includegraphics
+	%	\includegraphics{figures/Addition.png}
+	\begin{tikzpicture}[every node/.style={draw, rectangle}]
+	\begin{scope}[node distance=15mm and 20mm]
+	\node (c) [scale=1.25] at (1,0) {Change I};
+	\node (1) [above left=of c, scale=1.25] {Version 1};
+	\node (2) [above right=of c, scale=1.25] {Version 2};
+	\node (a) [below =of 1, scale=1.25] {Attribute 1};
+	
+	\draw [line width=2pt,->] (a) -- (c);
+	\draw [line width=2pt,->] (c) -- (2);
+	\draw [line width=2pt, ->] (1) -- (a);
+	\end{scope}
+	\end{tikzpicture}
+	\caption{Model of the relationships between Versions 1 and 2 when invalidating Attribute 1 from Version 1 as a result of Change I.}
+	\label{InvalidationFig}  % the \label command comes AFTER the caption
+\end{figure}
+Just like in the addition model, the invalidation construction maintains a link between the two version objects in order to maintain version continuity.
+In the invalidation case, it makes more conceptual sense, however, because Version 2 invalidates Attribute 1 by omitting the attribute.
+

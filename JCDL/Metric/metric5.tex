@@ -1,0 +1,25 @@
+\section{Change Metric Analysis}
+
+The dot-decimal identifier scheme employed by GCMD Keywords defines two levels of change: major and minor.
+According to the \textit{Keyword Governance and Community Guide Document} \cite{gcmd_gov}, ``Full GCMD keywords list releases get a new major version number (e.g., 8.0). Incremental releases for updates to topics, terms, and variables get a new minor version number (e.g., 8.1),” \cite{gcmd_gov}.
+The document does not explain the purpose or distinguishing qualities of versions with a third level identifier i.e. Version 8.4.1.
+VersOn improves the change evaluation between versions by increasing the precision used to distinguish versions from a categorical metric to a spectrum.
+Rather than a major or minor change, the metric accounts the number of changes between adjacent versions.
+Using VersOn additionally breaks down the total summary metric into component parts: addition, invalidation, and modification.
+The breakdown in Figure \ref{GCMDC1} illustrates that additions dominate the kind of change made to versions in GCMD, a conclusion unreachable looking at either total change or the dot-decimal identifier.
+
+We originally pursued the hypothesis that the VersOn change metric would improve the ability to discern between major and minor GCMD Keyword versions on the assumption that an order of magnitude difference exists in the total changes between major and minor transitions.
+The results in Figure \ref{GCMDC1} show that `8.0 to 8.1' is not an order of magnitude different from major version publications and `8.4 to 8.4.1' is also not an order of magnitude separated from minor version releases.
+Looking at the specific values of `June 12, 2012' to Version 8.1, there may exist a threshold around 330 total changes where data producers consider a new version to be a full keyword release.
+A similar threshold from minor to revision does not seem to exist, and the total number of changes in the revision is actually greater than most other minor releases in the data. 
+The analysis does not claim that change distance should be the sole mechanism in determining version identifiers.
+Addition, invalidation, and modification provides deeper insight into how a data set is changing, but some changes can be more impactful than others which this analysis does not capture.
+
+The results of applying VersOn to Version 8.5 revealed multiple methods in assessing the amount of change in a data set.
+Comparing the `URI Based' and `Silent' mapping methods, we can see the discrepancy between a linked-data user's perceived change and the GCMD Keyword group's perceived change.
+We know that GCMD Keyword group uses the `Silent' method since the method is the only one to produce a magnitude of change not on the order of the entire data set.
+The `URI Based' and `Bridged' methods require new major version numbers, but a minor version number was assigned.
+The metric also models informed GCMD Keywords Version 8.5 customers who were aware of the namespace change by manually mapping matching UUIDs as modifications.
+The results demonstrate the inflexibility of dot-decimal identifiers which must be applied at the time of publication entirely based on the data producers assessment of the total change to the data set.
+VersOn enables data users to contextualize the data by the data's utilization and compute an appropriate change metric post-publication.
+Making sure that data consumers have the ability to assess change in data sets when the requirements for change differs between producer and consumer must be addressed.

@@ -1,0 +1,219 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{11}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Schema.org}{Sch}{[n. d.]a}]%
+        {SchemaAdd}
+ \bibinfo{year}{[n. d.]}\natexlab{a}.
+\newblock \bibinfo{title}{AddAction}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://schema.org/AddAction}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: January 19, 2017.}
+
+
+\bibitem[\protect\citeauthoryear{Schema.org}{Sch}{[n. d.]b}]%
+        {SchemaRem}
+ \bibinfo{year}{[n. d.]}\natexlab{b}.
+\newblock \bibinfo{title}{DeleteAction}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://schema.org/DeleteAction}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: January 19, 2017.}
+
+
+\bibitem[\protect\citeauthoryear{Schema.org}{Sch}{[n. d.]c}]%
+        {SchemaRep}
+ \bibinfo{year}{[n. d.]}\natexlab{c}.
+\newblock \bibinfo{title}{ReplaceAction}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://schema.org/ReplaceAction}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: January 19, 2017.}
+
+
+\bibitem[\protect\citeauthoryear{Barkstrom}{Barkstrom}{2003}]%
+        {Barkstrom2003}
+\bibfield{author}{\bibinfo{person}{Bruce~R. Barkstrom}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Data Product Configuration Management and
+  Versioning in Large-Scale Production of Satellite Scientific Data}}.
+\newblock \bibinfo{pages}{118--133}.
+\newblock
+\showISBNx{978-3-540-39195-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/3-540-39195-9_9}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Buneman, Chapman, and Cheney}{Buneman
+  et~al\mbox{.}}{[n. d.]}]%
+        {Buneman}
+\bibfield{author}{\bibinfo{person}{Peter Buneman}, \bibinfo{person}{Adriane
+  Chapman}, {and} \bibinfo{person}{James Cheney}.} \bibinfo{year}{[n.
+  d.]}\natexlab{}.
+\newblock \showarticletitle{Provenance Management in Curated Databases}. In
+  \bibinfo{booktitle}{\emph{Proc. of the 2006 ACM SIGMOD Int. Conf. on Manage.
+  of Data}}. \bibinfo{pages}{539--550}.
+\newblock
+\showISBNx{1-59593-434-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1142473.1142534}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Capiluppi, Lago, and Morisio}{Capiluppi
+  et~al\mbox{.}}{2003}]%
+        {uel1037}
+\bibfield{author}{\bibinfo{person}{Andrea Capiluppi}, \bibinfo{person}{Patricia
+  Lago}, {and} \bibinfo{person}{Maurizio Morisio}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Evidences in the evolution of OS projects through
+  Changelog Analyses}. In \bibinfo{booktitle}{\emph{Taking Stock of the Bazaar:
+  Proc. of the 3rd Workshop on Open Source Softw. Eng.}}
+\newblock
+\urldef\tempurl%
+\url{http://roar.uel.ac.uk/1037/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: July 12, 2014.}
+
+
+\bibitem[\protect\citeauthoryear{Ciccarese, Soiland-Reyes, Belhajjame, Gray,
+  Goble, and Clark}{Ciccarese et~al\mbox{.}}{2013}]%
+        {Ciccarese2013}
+\bibfield{author}{\bibinfo{person}{Paolo Ciccarese}, \bibinfo{person}{Stian
+  Soiland-Reyes}, \bibinfo{person}{Khalid Belhajjame},
+  \bibinfo{person}{Alasdair~JG Gray}, \bibinfo{person}{Carole Goble}, {and}
+  \bibinfo{person}{Tim Clark}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{PAV ontology: provenance, authoring and
+  versioning}.
+\newblock \bibinfo{journal}{\emph{J. of Biomedical Semantics}}
+  \bibinfo{volume}{4}, \bibinfo{number}{1} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{37}.
+\newblock
+\showISSN{2041-1480}
+\urldef\tempurl%
+\url{https://doi.org/10.1186/2041-1480-4-37}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lebo, McGuinness, and Sahoo}{Lebo
+  et~al\mbox{.}}{2013}]%
+        {Lebo2013}
+\bibfield{author}{\bibinfo{person}{Timothy Lebo}, \bibinfo{person}{Deborah
+  McGuinness}, {and} \bibinfo{person}{Satya Sahoo}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{PROV}-O: The {PROV} Ontology}}.
+\newblock \bibinfo{type}{{W3C} Recommendation}. \bibinfo{institution}{W3C}.
+\newblock
+\urldef\tempurl%
+\url{http://www.w3.org/TR/2013/REC-prov-o-20130430/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: July 12, 2018.}
+
+
+\bibitem[\protect\citeauthoryear{Morrison, Downs, Golden, Pires, Fox, Ma,
+  Zednik, Eleish, Prabhu, Hummer, Liu, Meyer, Ralph, Hystad, and
+  Hazen}{Morrison et~al\mbox{.}}{2016}]%
+        {Morrison2016}
+\bibfield{author}{\bibinfo{person}{Shaunna Morrison}, \bibinfo{person}{Robert
+  Downs}, \bibinfo{person}{Joshua Golden}, \bibinfo{person}{Alex Pires},
+  \bibinfo{person}{Peter Fox}, \bibinfo{person}{Xiaogang Ma},
+  \bibinfo{person}{Stephan Zednik}, \bibinfo{person}{Ahmed Eleish},
+  \bibinfo{person}{Anirudh Prabhu}, \bibinfo{person}{Daniel Hummer},
+  \bibinfo{person}{Chao Liu}, \bibinfo{person}{Michael Meyer},
+  \bibinfo{person}{Jolyon Ralph}, \bibinfo{person}{Grethe Hystad}, {and}
+  \bibinfo{person}{Robert Hazen}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Exploiting mineral data: applications to the
+  diversity, distribution, and social networks of copper mineral}. In
+  \bibinfo{booktitle}{\emph{AGU Fall Meeting}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sporny, Herman, Adida, and Birbeck}{Sporny
+  et~al\mbox{.}}{2015}]%
+        {Herman2015}
+\bibfield{author}{\bibinfo{person}{Manu Sporny}, \bibinfo{person}{Ivan Herman},
+  \bibinfo{person}{Ben Adida}, {and} \bibinfo{person}{Mark Birbeck}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{RDFa} 1.1 Primer - Third Edition}}.
+\newblock \bibinfo{type}{{W3C} Note}. \bibinfo{institution}{W3C}.
+\newblock
+\urldef\tempurl%
+\url{http://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: July 12, 2018.}
+
+
+\bibitem[\protect\citeauthoryear{Sporny, Longley, Kellogg, Lanthaler, and
+  Lindstrom}{Sporny et~al\mbox{.}}{2017}]%
+        {JSONLD}
+\bibfield{author}{\bibinfo{person}{Manu Sporny}, \bibinfo{person}{Dave
+  Longley}, \bibinfo{person}{Gregg Kellogg}, \bibinfo{person}{Markus
+  Lanthaler}, {and} \bibinfo{person}{Niklas Lindstrom}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{JSON-LD 1.1}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://json-ld.org/spec/latest/json-ld/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: June 7, 2017.}
+
+
+\end{thebibliography}

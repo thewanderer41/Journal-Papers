@@ -1,0 +1,106 @@
+% Encoding: UTF-8
+
+@InProceedings{uel1037,
+  author        = {Andrea Capiluppi and Patricia Lago and Maurizio Morisio},
+  title         = {Evidences in the evolution of OS projects through Changelog Analyses},
+  booktitle     = {Taking Stock of the Bazaar: Proc. of the 3rd Workshop on Open Source Softw. Eng.},
+  year          = {2003},
+  month         = may,
+  note          = {Accessed on: July 12, 2014},
+  __markedentry = {[blee:2]},
+  abstract      = {Most empirical studies about Open Source (OS) projects
+or products are vertical and usually deal with the flagship,
+successful projects. There is a substantial lack of
+horizontal studies to shed light on the whole population of
+projects, including failures. This paper presents a horizontal
+study aimed at characterizing OS projects.
+We analyze a sample of around 400 projects from a popular
+OS project repository. Each project is characterized
+by a number of attributes. We analyze these attributes
+statically and over time.
+The main results show that few projects are capable of
+attracting a meaningful community of developers. The
+majority of projects is made by few (in many cases one)
+person with a very slow pace of evolution.
+We then try to observe how many projects count on a substantial
+number of developers, and analyze those projects
+more deeply. The goal is to achieve a better insight in the
+dynamics of open source development.
+The initial results of this analysis, especially growth in
+code size and tendency to stability in modularity, seem to
+be in line with traditional close source development.},
+  bml_editor    = {Joseph Feller and Brian Fitzgerald and Scott Hissam and Karim Lakhani},
+  bmlnote       = {Citation: Capiluppi, A., Lago, P., Morisio, M. (2003). ?Evidences in the evolution of OS projects through Changelog Analyses.? in Feller, P., Fitzgerald, B., Hissam, B. Lakhani, K. (eds.) Taking Stock of the Bazaar: Proceedings of the 3rd Workshop on Open Source Software Engineering ICSE?03 International Conference on Software Engineering Portland, Oregon May 3-11, 2003. pp.19-24..},
+  groups        = {Changelogs},
+  url           = {http://roar.uel.ac.uk/1037/},
+}
+
+@TechReport{Lebo2013,
+  author      = {Timothy Lebo and Deborah McGuinness and Satya Sahoo},
+  title       = {{PROV}-O: The {PROV} Ontology},
+  institution = {W3C},
+  year        = {2013},
+  type        = {{W3C} Recommendation},
+  month       = apr,
+  note        = {Accessed on: July 12, 2018},
+  bibsource   = {http://w2.syronex.com/jmr/w3c-biblio},
+  groups      = {Provenance, PROVO},
+  url         = {http://www.w3.org/TR/2013/REC-prov-o-20130430/},
+}
+
+@InBook{Barkstrom2003,
+  pages         = {118--133},
+  title         = {Data Product Configuration Management and Versioning in Large-Scale Production of Satellite Scientific Data},
+  year          = {2003},
+  author        = {Barkstrom, Bruce R.},
+  editor        = {Westfechtel, Bernhard and van der Hoek, Andr{\'e}},
+  isbn          = {978-3-540-39195-1},
+  bml_address   = {Berlin, Heidelberg},
+  bml_publisher = {Springer Berlin Heidelberg},
+  booktitle     = {Softw. Conf. Manage.: ICSE Workshops SCM 2001 and SCM 2003, Toronto, Canada, May 14--15, 2001 and Portland, OR, USA, May 9--10, 2003. Select. Papers},
+  doi           = {10.1007/3-540-39195-9_9},
+  groups        = {Models},
+  url           = {http://dx.doi.org/10.1007/3-540-39195-9_9},
+}
+
+@InProceedings{Buneman,
+  author        = {Buneman, Peter and Chapman, Adriane and Cheney, James},
+  title         = {Provenance Management in Curated Databases},
+  booktitle     = {Proc. of the 2006 ACM SIGMOD Int. Conf. on Manage. of Data},
+  pages         = {539--550},
+  acmid         = {1142534},
+  bml_address   = {New York, NY, USA},
+  bml_publisher = {ACM},
+  bml_series    = {SIGMOD '06},
+  bml_year      = {2006},
+  doi           = {10.1145/1142473.1142534},
+  isbn          = {1-59593-434-0},
+  keywords      = {curation, provenance, storage},
+  location      = {Chicago, IL, USA},
+  numpages      = {12},
+  url           = {http://doi.acm.org/10.1145/1142473.1142534},
+}
+
+@Article{Ma2014191,
+  author   = {Xiaogang Ma and Jin Guang Zheng and Justin C. Goldstein and Stephan Zednik and Linyun Fu and Brian Duggan and Steven M. Aulenbach and Patrick West and Curt Tilmes and Peter Fox},
+  title    = {Ontology engineering in provenance enablement for the National Climate Assessment},
+  journal  = {Environmental Modelling \& Softw.},
+  year     = {2014},
+  volume   = {61},
+  pages    = {191 - 205},
+  issn     = {1364-8152},
+  abstract = {Abstract The National Climate Assessment of the U.S. Global Change Research Program (USGCRP) analyzes and presents the impacts of climate change on the United States. The provenance information in the assessment is important because the assessment findings are of great public and academic concern and are used in policy and decision-making. By applying a use case-driven iterative methodology, we developed information models and ontology to represent the content structure of the recent National Climate Assessment draft report and its associated provenance information. We tested the ontology by using it in pilot systems serving information about instances of chapters, scientific findings, figures, tables, images, datasets, references, people, and organizations, etc. in the draft report, as well as interrelationships among those instances. The results successfully help users trace provenance in the draft report, such as finding all the journal articles from which a figure in the report was derived. The provenance information in our work was maintained in the context of the “Web of Data”. In addition to the pilot systems we developed, other tools and services are also able to retrieve and utilize the provenance information. Our work is part of a Global Change Information System coordinated by the \{USGCRP\} that will eventually cover provenance information for the entire scope of global change research. Such a system will greatly increase understanding, credibility and trust in the global change research and foster reproducibility of scientific results and conclusions. },
+  groups   = {Provenance},
+  keywords = {Provenance, Ontology engineering, Use cases, Global change, Semantic web },
+  url      = {http://dx.doi.org/10.1016/j.envsoft.2014.08.002},
+}
+
+@InProceedings{Morrison2016,
+  author    = {Shaunna Morrison and Robert Downs and Joshua Golden and Alex Pires and Peter Fox and Xiaogang Ma and Stephan Zednik and Ahmed Eleish and Anirudh Prabhu and Daniel Hummer and Chao Liu and Michael Meyer and Jolyon Ralph and Grethe Hystad and Robert Hazen},
+  title     = {Exploiting mineral data: applications to the diversity, distribution, and social networks of copper mineral},
+  booktitle = {AGU Fall Meeting},
+  year      = {2016},
+  groups    = {Data Sets},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

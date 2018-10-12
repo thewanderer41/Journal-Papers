@@ -1,0 +1,157 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{7}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Earthdata}{GCM}{2016}]%
+        {GCMDKey}
+ \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Keyword FAQ}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://wiki.earthdata.nasa.gov/display/CMR/Keyword+FAQ}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: December 12, 2016.}
+
+
+\bibitem[\protect\citeauthoryear{Barkstrom}{Barkstrom}{2014}]%
+        {barkstrom2014earth}
+\bibfield{author}{\bibinfo{person}{B.R. Barkstrom}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Earth Science Data Management Handbook:
+  Users and User Access}}. Vol.~\bibinfo{volume}{1}.
+\newblock \bibinfo{publisher}{CRC Press}, \bibinfo{address}{Boca Raton, FL,
+  USA}.
+\newblock
+\showISBNx{9781439866986}
+\urldef\tempurl%
+\url{https://books.google.com/books?id=pI3rTgEACAAJ}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: July 12, 2014.}
+
+
+\bibitem[\protect\citeauthoryear{{Global Change Master Directory
+  (GCMD)}}{{Global Change Master Directory (GCMD)}}{2016}]%
+        {gcmd_gov}
+\bibfield{author}{\bibinfo{person}{{Global Change Master Directory (GCMD)}}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Global Change Master Directory (GCMD)
+  Keyword Governance and Community Guide Document} (\bibinfo{edition}{version
+  1.0} ed.)}.
+\newblock National Aeronautics and Space Administration (NASA).
+\newblock
+\urldef\tempurl%
+\url{https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed: June 10, 2018.}
+
+
+\bibitem[\protect\citeauthoryear{Miled, Sikkupparbathyam, Bukhres, Nagendra,
+  Lynch, Areal, Olsen, Gokey, Kendig, Northcutt, Cordova, Major, and
+  Savage}{Miled et~al\mbox{.}}{[n. d.]}]%
+        {Miled:2001:GCM:372202.372324}
+\bibfield{author}{\bibinfo{person}{Zina~Ben Miled}, \bibinfo{person}{Srinivasan
+  Sikkupparbathyam}, \bibinfo{person}{Omran Bukhres}, \bibinfo{person}{Kishan
+  Nagendra}, \bibinfo{person}{Eric Lynch}, \bibinfo{person}{Marcelo Areal},
+  \bibinfo{person}{Lola Olsen}, \bibinfo{person}{Chris Gokey},
+  \bibinfo{person}{David Kendig}, \bibinfo{person}{Tom Northcutt},
+  \bibinfo{person}{Rosy Cordova}, \bibinfo{person}{Gene Major}, {and}
+  \bibinfo{person}{Nanine Savage}.} \bibinfo{year}{[n. d.]}\natexlab{}.
+\newblock \showarticletitle{Global Change Master Directory: Object-oriented
+  Active Asynchronous Transaction Management in a Federated Environment Using
+  Data Agents}. In \bibinfo{booktitle}{\emph{Proc. of the 2001 ACM Symp on
+  Applied Computing}}. \bibinfo{pages}{207--214}.
+\newblock
+\showISBNx{1-58113-287-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/372202.372324}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Miles and Bechhofer}{Miles and
+  Bechhofer}{2009}]%
+        {skos}
+\bibfield{author}{\bibinfo{person}{Alistair Miles} {and} \bibinfo{person}{Sean
+  Bechhofer}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{SKOS} Simple Knowledge Organization System
+  Reference}}.
+\newblock \bibinfo{type}{{W3C} Recommendation}. \bibinfo{institution}{W3C}.
+\newblock
+\urldef\tempurl%
+\url{http://www.w3.org/TR/2009/REC-skos-reference-20090818/}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: July 12, 2018.}
+
+
+\bibitem[\protect\citeauthoryear{Stevens}{Stevens}{2016}]%
+        {Stevens2016}
+\bibfield{author}{\bibinfo{person}{Tyler Stevens}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{NASA GCMD Keyword Version 8.4 Released}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://wiki.earthdata.nasa.gov/display/CMR/NASA+GCMD+Keywords+Version+8.4+Released}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Accessed on: February 10, 2017.}
+
+
+\bibitem[\protect\citeauthoryear{Tagger}{Tagger}{2005}]%
+        {Tagger2005}
+\bibfield{author}{\bibinfo{person}{Ben Tagger}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \bibinfo{title}{A Literature Review for the Problem of Biological
+  Data Versioning}.
+\newblock \bibinfo{howpublished}{Online}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1.1.104.2137}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}

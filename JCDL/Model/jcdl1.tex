@@ -1,0 +1,79 @@
+\title{Versioning Ontology for Encoding Change Log Data}
+
+\author{Benno Lee}
+\affiliation{%
+	\institution{Rensselaer Polytechnic Institute}
+	\city{Troy}
+	\state{NY}
+	\postcode{12180}
+	\country{USA}}
+\email{leeb5@rpi.edu}
+\author{Peter Fox}
+\affiliation{%
+	\institution{Rensseleaer Polytechnic Institute}
+	\city{Troy}
+	\state{NY}
+	\postcode{12180}
+	\country{USA}}
+\email{pfox@cs.rpi.edu}
+
+\begin{abstract}
+	Data often does not remain static after collection.
+	Adding annotations, correcting errors, or removing invalidated data, a data set continues to evolve after collection.
+	Current methods to track data change through linked-data ontologies utilize concepts from provenance ontologies, but a versioning ontology creates a more complete picture by focusing on versioning information.
+	In this paper we define the Versioning Ontology (VersOn) with more complete semantics than current provenance ontologies.
+	The VersOn then enables information within data change logs to be exposed as linked data using the Resource Description Framework in Attributes (RDFa) or JavaScript Object Notation for Linked Data (JSON-LD).
+	We then evaluate the efficacy of VersOn by assessing the impact encoding VersOn into a change log has on the document's performance.
+	Uncompressed provenance data is known to be on the order of the original data, forming an expectation of no more than 50\% reduction in performance.
+	VersOn encoded change logs show a much greater impact to performance.
+\end{abstract}
+
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315</concept_id>
+	<concept_desc>Information systems~Semantic web description languages</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003277.10003280</concept_id>
+	<concept_desc>Information systems~Web log analysis</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315.10003314</concept_id>
+	<concept_desc>Information systems~Resource Description Framework (RDF)</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002951.10003260.10003309.10003315.10003316</concept_id>
+	<concept_desc>Information systems~Web Ontology Language (OWL)</concept_desc>
+	<concept_significance>300</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Information systems~Semantic web description languages}
+\ccsdesc[300]{Information systems~Web log analysis}
+\ccsdesc[300]{Information systems~Resource Description Framework (RDF)}
+\ccsdesc[300]{Information systems~Web Ontology Language (OWL)}
+
+\keywords{Version, versioning, versioning ontology, data change, change log, provenance}
+
+\maketitle
+
+\section{Introduction}
+
+A change log is a document explaining the differences between two versions of a data object \cite{uel1037}.
+Valuable change information within the change log can be exposed as linked data using existing markup technology.
+A number of provenance ontologies include versioning concepts, but the terms define a specific view of change capture.
+Because provenance focuses on capturing the entities and activities used to produce a data object, provenance concepts do not completely capture the change differences between objects.
+Delving deeper and comparing the parts of the objects lies outside the scope of provenance information.
+In order to achieve completeness, a linked-data model must include the concepts of addition, invalidation, and modification.
+The model must relate the changing parts which differentiate objects as separate versions with the objects.
+The model must also maintain a continuity between versions to preserve the historical evolution of a data object.
+
+In this paper, we establish the Versioning Ontology (VersOn), which satisfies the previous three completeness requirements, to expose information in change logs as linked data.
+Every change logged in the document costs a certain amount of storage space to store the change.
+One of the ways to measure change log performance is to compute the number of entries in the change log relative to the space necessary to store the information.
+We assess the capability of VersOn by looking at the reduction in performance due to adding the encoding markup compared to bounds formed from associated linked data.

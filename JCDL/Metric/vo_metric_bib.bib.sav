@@ -1,0 +1,89 @@
+% Encoding: UTF-8
+
+@InProceedings{Miled:2001:GCM:372202.372324,
+  author        = {Miled, Zina Ben and Sikkupparbathyam, Srinivasan and Bukhres, Omran and Nagendra, Kishan and Lynch, Eric and Areal, Marcelo and Olsen, Lola and Gokey, Chris and Kendig, David and Northcutt, Tom and Cordova, Rosy and Major, Gene and Savage, Nanine},
+  title         = {Global Change Master Directory: Object-oriented Active Asynchronous Transaction Management in a Federated Environment Using Data Agents},
+  booktitle     = {Proc. of the 2001 ACM Symp on Applied Computing},
+  pages         = {207--214},
+  acmid         = {372324},
+  bml_address   = {New York, NY, USA},
+  bml_publisher = {ACM},
+  bml_series    = {SAC '01},
+  bml_year      = {2001},
+  doi           = {10.1145/372202.372324},
+  groups        = {Data Sets},
+  isbn          = {1-58113-287-5},
+  keywords      = {JDBC, Java, RMI, World Wide Web, XML, asynchronous, component, distributed, distributed object management, global transaction management, interface, interoperability, object-oriented},
+  location      = {Las Vegas, Nevada, USA},
+  numpages      = {8},
+  url           = {http://doi.acm.org/10.1145/372202.372324},
+}
+
+@Misc{GCMDKey,
+  title        = {Keyword FAQ},
+  year         = {2016},
+  note         = {Accessed on: December 12, 2016},
+  groups       = {Data Sets},
+  organization = {Earthdata},
+  url          = {https://wiki.earthdata.nasa.gov/display/CMR/Keyword+FAQ},
+}
+
+@Manual{gcmd_gov,
+  title        = {Global Change Master Directory (GCMD) Keyword Governance and Community Guide Document},
+  author       = {{Global Change Master Directory (GCMD)}},
+  organization = {National Aeronautics and Space Administration (NASA)},
+  edition      = {Version 1.0},
+  month        = aug,
+  year         = {2016},
+  note         = {Accessed: June 10, 2018},
+  url          = {https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf},
+}
+
+@TechReport{skos,
+  author      = {Alistair Miles and Sean Bechhofer},
+  title       = {{SKOS} Simple Knowledge Organization System Reference},
+  institution = {W3C},
+  year        = {2009},
+  type        = {{W3C} Recommendation},
+  month       = aug,
+  note        = {Accessed on: July 12, 2018},
+  bibsource   = {http://w2.syronex.com/jmr/w3c-biblio},
+  groups      = {Data Sets},
+  url         = {http://www.w3.org/TR/2009/REC-skos-reference-20090818/},
+}
+
+@Misc{Stevens2016,
+  author = {Tyler Stevens},
+  title  = {NASA GCMD Keyword Version 8.4 Released},
+  month  = aug,
+  year   = {2016},
+  note   = {Accessed on: February 10, 2017},
+  groups = {Data Sets},
+  url    = {https://wiki.earthdata.nasa.gov/display/CMR/NASA+GCMD+Keywords+Version+8.4+Released},
+}
+
+@Book{barkstrom2014earth,
+  title     = {Earth Science Data Management Handbook: Users and User Access},
+  publisher = {CRC Press},
+  year      = {2014},
+  author    = {Barkstrom, B.R.},
+  volume    = {1},
+  address   = {Boca Raton, FL, USA},
+  month     = apr,
+  isbn      = {9781439866986},
+  note      = {Accessed on: July 12, 2014},
+  groups    = {Library Science},
+  url       = {https://books.google.com/books?id=pI3rTgEACAAJ},
+}
+
+@Misc{Tagger2005,
+  author       = {Ben Tagger},
+  title        = {A Literature Review for the Problem of Biological Data Versioning},
+  howpublished = {Online},
+  month        = jul,
+  year         = {2005},
+  doi          = {10.1.1.104.2137},
+  url          = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.104.2137},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
